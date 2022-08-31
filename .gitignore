@@ -5,3 +5,4 @@
 /work_syn/
 *.$$$
 *.bak
+.lock
