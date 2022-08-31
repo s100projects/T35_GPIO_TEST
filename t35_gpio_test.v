@@ -15,44 +15,46 @@ module t35_gpio_test (clk, pll_LOCKED, pll_LOCKED_out, pll_RSTN, gpio, gpioa, gp
  
  reg [7:0] counter;
 
-   //resetn pin (SW3) is always "1",  pressed switch pulls to low "0"
-   //pll_reset is active-LOW, therefore, it should follow the behaviour as SW3
+   //pll_RSTN net is always "1",  not needed to reset counter as pll_LOCKED does that
    assign pll_RSTN = 1'b1;
-   assign pll_LOCKED_out= pll_LOCKED;
+   assign pll_LOCKED_out = pll_LOCKED;
    
    always @(posedge clk) 
    begin
         if (!pll_LOCKED) 
             counter <= 8'b11111111;
         else
-            counter <= counter + 1;
+            if (counter == 8'b11111111)
+                counter <= 8'b00000000;
+            else
+                counter <= counter + 1;
    end
   
-   assign gpio= counter;
-   assign gpioa= counter;
-   assign gpiob= counter;
-   assign gpioc= counter;
-   assign gpiod= counter;
-   assign gpioe= counter;
-   assign gpiof= counter;
-   assign gpiog= counter;
-   assign gpioh= counter;
-   assign gpioi= counter;
-   assign gpioj= counter;
-   assign gpiok= counter;
-   assign gpiol= counter;
-   assign gpiom= counter;
-   assign gpion= counter;
-   assign gpioo= counter;
-   assign gpiop= counter;
-   assign gpioq= counter;
-   assign gpior= counter;
-   assign gpios= counter;
-   assign gpiot= counter;
-   assign gpiou= counter;
-   assign gpiov= counter;
-   assign gpiow= counter;
-   assign gpiox= counter;
-   assign gpioy= counter;
+   assign gpio =  counter;
+   assign gpioa = counter;
+   assign gpiob = counter;
+   assign gpioc = counter;
+   assign gpiod = counter;
+   assign gpioe = counter;
+   assign gpiof = counter;
+   assign gpiog = counter;
+   assign gpioh = counter;
+   assign gpioi = counter;
+   assign gpioj = counter;
+   assign gpiok = counter;
+   assign gpiol = counter;
+   assign gpiom = counter;
+   assign gpion = counter;
+   assign gpioo = counter;
+   assign gpiop = counter;
+   assign gpioq = counter;
+   assign gpior = counter;
+   assign gpios = counter;
+   assign gpiot = counter;
+   assign gpiou = counter;
+   assign gpiov = counter;
+   assign gpiow = counter;
+   assign gpiox = counter;
+   assign gpioy = counter;
 
 endmodule
