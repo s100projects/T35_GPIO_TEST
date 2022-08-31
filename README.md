@@ -6,11 +6,11 @@ Required equiment for this test includes:
 2. JTAG Programmer (available from two different distributors:
   - Digikey 
 
-| Disti Part No | Description | Manf | Manf Part No |
-| --- | --- | --- | --- | --- |
-| 1188-1016-ND | JTAG Adapter | Olimex | ARM-JTAG-20-10 |
-| 768-1106 | USB Adapter | FTDI | C232HM-DDHSL-0 |
-| S2021EC-10-ND | Male to Male Header | Sullins | PRPC010DABN-RC |
+    | Disti Part No | Description | Manf | Manf Part No |
+    | --- | --- | --- | --- | --- |
+    | 1188-1016-ND | JTAG Adapter | Olimex | ARM-JTAG-20-10 |
+    | 768-1106 | USB Adapter | FTDI | C232HM-DDHSL-0 |
+    | S2021EC-10-ND | Male to Male Header | Sullins | PRPC010DABN-RC |
     
   - Mouser
 
