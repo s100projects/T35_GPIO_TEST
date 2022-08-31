@@ -3,7 +3,7 @@
 This FPGA Project is used for testing the GPIO pins of the **T35 FPGA Module** created for the S100 Hobbyist community.
 Required equiment for this test includes:
 1. T35 FPGA Module (available to S100Computers Members)
-2. JTAG Programmer (available from two different distributors:
+2. JTAG Programmer (available from two different distributors):
     Digikey 
 
     | Disti Part No | Description         | Manf    | Manf Part No   |
