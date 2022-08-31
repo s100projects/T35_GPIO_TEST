@@ -22,5 +22,5 @@ This FPGA Project is used for testing the GPIO pins of the **T35 FPGA Module** c
 ## Cloning (Downloading)
 *Note*: Because Efinity encodes the full path in the project XML file, it is best if you follow the same folder convention that I use here for the S100Projects FPGA Code, namely:
 ```html
-    c:\S100Projects\<Project Directory>
+    c:\S100Projects\T35_GPIO_TEST
 ```
