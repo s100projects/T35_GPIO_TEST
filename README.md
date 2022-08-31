@@ -24,3 +24,6 @@ This FPGA Project is used for testing the GPIO pins of the **T35 FPGA Module** c
 ```html
     c:\S100Projects\T35_GPIO_TEST
 ```
+
+Once downloaded, you will need to compile the project with the Efinity toolchain and then program it via the JTAG interface (see Efinix documentation).
+AFter programming, each GPIO pin will be outputting one of eight divided down clocks.
