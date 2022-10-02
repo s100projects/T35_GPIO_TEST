@@ -1,7 +1,7 @@
 module t35_gpio_test (clk, pll_LOCKED, pll_LOCKED_out, pll_RSTN, gpio, gpioa, gpiob, gpioc,
                       gpiod, gpioe, gpiof, gpiog, gpioh, gpioi, gpioj, gpiok, gpiol, gpiom,
                       gpion, gpioo, gpiop, gpioq, gpior, gpios, gpiot, gpiou, gpiov, gpiow,
-                      gpiox, gpioy); 
+                      gpiox, gpioy, gpioz); 
 
  input clk, pll_LOCKED;
  output pll_LOCKED_out;
@@ -11,7 +11,7 @@ module t35_gpio_test (clk, pll_LOCKED, pll_LOCKED_out, pll_RSTN, gpio, gpioa, gp
                 gpioj, gpiok, gpiol, gpiom, gpion,
                 gpioo, gpiop, gpioq, gpior, gpios,
                 gpiot, gpiou, gpiov, gpiow, gpiox,
-                gpioy;
+                gpioy, gpioz;
  
  reg [7:0] counter;
 
@@ -56,5 +56,6 @@ module t35_gpio_test (clk, pll_LOCKED, pll_LOCKED_out, pll_RSTN, gpio, gpioa, gp
    assign gpiow = counter;
    assign gpiox = counter;
    assign gpioy = counter;
+   assign gpioz = counter;
 
 endmodule
